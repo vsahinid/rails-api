@@ -4,6 +4,8 @@ bin/rails server
 
 bin/rails generate migration AddPartNumberToProducts
 
+bin/rails db:migrate
+
 bin/rails db migrate
 
 This README would normally document whatever steps are necessary to get the

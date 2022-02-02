@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_31_053251) do
+ActiveRecord::Schema.define(version: 2022_02_02_022914) do
 
   create_table "books", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2022_01_31_053251) do
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
   end
 
   add_foreign_key "books", "users"
